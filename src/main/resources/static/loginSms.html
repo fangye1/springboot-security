@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link href="css/login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<form action="/login/sms" class="login-page" method="post">
+    <div class="form">
+        <h3>短信验证码登录</h3>
+        <input name="mobile" placeholder="手机号" required="required" type="text" value="17777777777"/>
+        <span style="display: inline">
+            <input name="smsCode" placeholder="短信验证码" style="width: 50%;" type="text"/>
+            <a href="/sms/code?mobile=17777777777">发送验证码</a>
+        </span>
+        <button type="submit">登录</button>
+    </div>
+</form>
+</body>
+</html>
